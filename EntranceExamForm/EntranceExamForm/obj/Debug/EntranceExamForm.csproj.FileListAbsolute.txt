@@ -1,4 +1,0 @@
-D:\AkbarAli\MiniProject\EntranceExamForm\EntranceExamForm\bin\EntranceExamForm.dll
-D:\AkbarAli\MiniProject\EntranceExamForm\EntranceExamForm\bin\EntranceExamForm.pdb
-D:\AkbarAli\MiniProject\EntranceExamForm\EntranceExamForm\obj\Debug\EntranceExamForm.dll
-D:\AkbarAli\MiniProject\EntranceExamForm\EntranceExamForm\obj\Debug\EntranceExamForm.pdb
