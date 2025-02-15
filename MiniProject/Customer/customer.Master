@@ -1,0 +1,216 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="customer.master.cs" Inherits="MiniProject.Customer.customer" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Customer Panel</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body
+        {
+            font-family: math !important;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            overflow: hidden;
+        }
+        .main
+        {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .navbar
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 0px 10px #00000091;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+        .navbar .logo
+        {
+            color: white;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+        
+        .navbar .user-profile
+        {
+            display: flex;
+            align-items: center;
+            color: white;
+            gap: 10px;
+        }
+        
+        .navbar .user-profile .user-img
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            color: #000;
+            background: #fff;
+            height: 30px;
+            border: 1px solid #bbbbbb;
+            border-radius: 50%;
+        }
+        .sidebar
+        {
+            display: flex;
+            height: 100%;
+            gap: 5px;
+            background: #fff;
+            box-shadow: 1px 0px 10px #bbbbbb69;
+            width: 13%;
+            padding: 25px;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar a
+        {
+            display: flex;
+            align-items: end;
+            gap: 10px;
+            height: 20px;
+            padding: 15px 10px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            color: #000000;
+            width: 100%;
+        }
+        .content
+        {
+            margin-left: 260px;
+            padding: 20px;
+        }
+        .logout-btn
+        {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            background: #333;
+            padding: 2px 4px;
+            border:1px solid #fff;
+            border-radius:5px;
+            .btn
+            {
+                color:#fff;
+                background:none;
+                border:none;
+                cursor:pointer;
+            }
+        }
+        .logout-btn:hover
+        {
+            cursor: pointer;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            padding: 2px 4px;
+            border-radius:5px;
+            .btn
+            {
+                color:#323232;
+            }
+            svg
+            {
+                fill:#fff !important;
+            }
+        }
+        .logout-btn svg
+        {
+            width: 20px;
+            height: 20px;
+            fill: #333;
+        }
+        .loader{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            position: absolute;
+            height: 100vh;
+            background: #f6f6f6;
+            z-index: 9999;
+        }
+        .custom-loader {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: 
+                radial-gradient(farthest-side,#333 94%,#0000) top/8px 8px no-repeat,
+                conic-gradient(#0000 30%,#333);
+            -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+            animation:s3 1s infinite linear;
+        }
+
+        @keyframes s3{ 
+        100%{
+            transform: rotate(1turn)
+            }
+        }
+    </style>
+    <script>
+       $(document).ready(function () {
+            $(".loader").fadeOut();
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="navbar">
+            <a href="#" class="logo">HelpDesk</a>
+            <div class="user-profile">
+                <div class="logout-btn">
+                    <asp:Button ID="logout" Text="LogOut" runat="server" CssClass="btn" onclick="logout_Click" />
+                </div>
+                <asp:Label ID="lblUserName" runat="server"></asp:Label>
+                <div class="user-img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-user mr-2 h-4 w-4"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+            </div>
+        </div>
+     <div class="main">
+     <div class="loader">
+        <div class="custom-loader"></div>
+     </div>
+         <div class="sidebar">
+            <a href="customerDashboard.aspx">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-home mr-2 h-4 w-4">
+                    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                Dashboard 
+            </a>
+            <a href="customerTickets.aspx">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-ticket mr-2 h-4 w-4">
+                    <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z">
+                    </path>
+                    <path d="M13 5v2"></path>
+                    <path d="M13 17v2"></path>
+                    <path d="M13 11v2"></path>
+                </svg>
+                Tickets
+            </a>   
+                    
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

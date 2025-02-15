@@ -1,0 +1,10 @@
+c:\users\dell 5409\documents\visual studio 2010\Projects\MiniProject\MiniProject\bin\MiniProject.dll
+c:\users\dell 5409\documents\visual studio 2010\Projects\MiniProject\MiniProject\bin\MiniProject.pdb
+c:\users\dell 5409\documents\visual studio 2010\Projects\MiniProject\MiniProject\obj\Debug\MiniProject.dll
+c:\users\dell 5409\documents\visual studio 2010\Projects\MiniProject\MiniProject\obj\Debug\MiniProject.pdb
+C:\Users\Dell 5409\documents\visual studio 2010\Projects\MiniProject\MiniProject\obj\Debug\MiniProject.csprojResolveAssemblyReference.cache
+D:\AkbarAli\MiniProject\MiniProject\bin\MiniProject.dll
+D:\AkbarAli\MiniProject\MiniProject\bin\MiniProject.pdb
+D:\AkbarAli\MiniProject\MiniProject\obj\Debug\MiniProject.csprojResolveAssemblyReference.cache
+D:\AkbarAli\MiniProject\MiniProject\obj\Debug\MiniProject.dll
+D:\AkbarAli\MiniProject\MiniProject\obj\Debug\MiniProject.pdb

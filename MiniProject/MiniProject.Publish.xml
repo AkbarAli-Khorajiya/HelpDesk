@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Users\Dell 5409\Desktop\HelpDesk" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="02/15/2025 09:28:53" />
+    <file relUrl="WebForm1.aspx" publishTime="01/09/2025 13:10:37" />
+    <file relUrl="Customer/customerTickets.aspx" publishTime="02/10/2025 12:45:25" />
+    <file relUrl="Agent/agent.Master" publishTime="02/13/2025 09:57:07" />
+    <file relUrl="bin/MiniProject.dll" publishTime="02/13/2025 10:01:40" />
+    <file relUrl="Admin/adminManageTicket.aspx" publishTime="02/06/2025 12:47:31" />
+    <file relUrl="Customer/ViewTicket.aspx" publishTime="02/10/2025 11:44:49" />
+    <file relUrl="Admin/admin.Master" publishTime="02/06/2025 12:40:15" />
+    <file relUrl="bin/MiniProject.pdb" publishTime="02/13/2025 10:01:40" />
+    <file relUrl="Customer/customerDashboard.aspx" publishTime="02/06/2025 12:57:44" />
+    <file relUrl="Agent/chatMessage.aspx" publishTime="01/28/2025 11:14:56" />
+    <file relUrl="ForgetPass.aspx" publishTime="02/11/2025 09:01:30" />
+    <file relUrl="Admin/adminDashboard.aspx" publishTime="02/06/2025 12:51:14" />
+    <file relUrl="Admin/adminManageUser.aspx" publishTime="02/06/2025 12:47:47" />
+    <file relUrl="assets/alert.jpg" publishTime="02/07/2025 10:26:18" />
+    <file relUrl="Agent/agentAssignedTicket.aspx" publishTime="02/06/2025 12:54:49" />
+    <file relUrl="Registration.aspx" publishTime="02/10/2025 13:12:46" />
+    <file relUrl="App_Data/Database1.mdf" publishTime="02/15/2025 09:21:48" />
+    <file relUrl="Customer/chatMessage.aspx" publishTime="01/29/2025 09:15:43" />
+    <file relUrl="Login.aspx" publishTime="02/10/2025 12:56:12" />
+    <file relUrl="Customer/customer.Master" publishTime="02/13/2025 09:57:19" />
+    <file relUrl="App_Data/Database1_log.ldf" publishTime="02/15/2025 09:21:48" />
+    <file relUrl="Admin/adminManageAgent.aspx" publishTime="02/06/2025 12:47:17" />
+    <file relUrl="Agent/agentDashboard.aspx" publishTime="02/06/2025 12:55:59" />
+    <file relUrl="Admin/ViewTicket.aspx" publishTime="01/30/2025 12:16:29" />
+    <file relUrl="Agent/ViewTicket.aspx" publishTime="02/10/2025 11:46:22" />
+  </publishProfile>
+</publishData>
