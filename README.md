@@ -1,4 +1,4 @@
-# Customer Ticket Management System
+# Customer Ticket Management System: (HelpDesk)
 
 ## 📌 Overview
 The **Customer Ticket Management System** is a web-based application built on **ASP.NET Framework 4.0** with **MS SQL Server**. It facilitates seamless communication between **Customers, Agents, and Admin**, ensuring efficient issue tracking and resolution.
@@ -30,8 +30,8 @@ The **Customer Ticket Management System** is a web-based application built on **
 ## 🔧 Installation Guide
 ### **1. Clone the Repository**
 ```sh
-git clone https://github.com/your-repository/customer-ticket-management.git
-cd customer-ticket-management
+git clone https://github.com/AkbarAli-Khorajiya/HelpDesk.git
+cd HelpDesk
 ```
 
 ### **2. Configure Database**
@@ -45,8 +45,7 @@ cd customer-ticket-management
 
 ### **3. Run the Application**
 - Open the solution in **Visual Studio**
-- Restore NuGet packages
-- Run the application using **IIS Express** or host on **IIS**
+- Run the application
 
 ## 🔑 User Roles & Access
 | Role     | Permissions |
@@ -55,8 +54,5 @@ cd customer-ticket-management
 | **Agent** | View and update assigned tickets. Communicate with customers. |
 | **Customer** | Create new tickets. Track ticket status. |
 
-## 📜 License
-This project is licensed under the **MIT License**. Feel free to modify and use it.
-
 ## 📞 Support & Contact
-For any issues, contact us at [support@yourdomain.com](mailto:support@yourdomain.com).
+For any issues, contact us at akbarali.m.khorajiya@gmail.com.
